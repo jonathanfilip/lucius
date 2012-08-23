@@ -1,11 +1,11 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\LuciusDark]
+[HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\LuciusBlack]
 "Colour0"="215,215,215"
 "Colour1"="215,215,215"
-"Colour2"="48,48,48"
-"Colour3"="48,48,48"
-"Colour4"="48,48,48"
+"Colour2"="18,18,18"
+"Colour3"="18,18,18"
+"Colour4"="18,18,18"
 "Colour5"="135,175,215"
 "Colour6"="215,215,215"
 "Colour7"="215,215,215"
@@ -21,5 +21,5 @@ Windows Registry Editor Version 5.00
 "Colour17"="215,175,215"
 "Colour18"="135,215,175"
 "Colour19"="135,215,175"
-"Colour20"="48,48,48"
-"Colour21"="48,48,48"
+"Colour20"="18,18,18"
+"Colour21"="18,18,18"

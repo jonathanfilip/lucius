@@ -1,0 +1,9 @@
+    <key>%(name)s</key>
+    <dict>
+        <key>Blue Component</key>
+        <real>%(blue)f</real>
+        <key>Green Component</key>
+        <real>%(green)f</real>
+        <key>Red Component</key>
+        <real>%(red)f</real>
+    </dict>

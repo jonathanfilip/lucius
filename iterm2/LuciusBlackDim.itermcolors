@@ -68,11 +68,11 @@
     <key>Ansi 7 Color</key>
     <dict>
         <key>Blue Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
         <key>Green Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
         <key>Red Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
     </dict>
     <key>Ansi 8 Color</key>
     <dict>
@@ -140,20 +140,20 @@
     <key>Ansi 15 Color</key>
     <dict>
         <key>Blue Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
         <key>Green Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
         <key>Red Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
     </dict>
     <key>Background Color</key>
     <dict>
         <key>Blue Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
         <key>Green Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
         <key>Red Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
     </dict>
     <key>Foreground Color</key>
     <dict>
@@ -194,11 +194,11 @@
     <key>Cursor Text Color</key>
     <dict>
         <key>Blue Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
         <key>Green Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
         <key>Red Component</key>
-        <real>0.188235</real>
+        <real>0.070588</real>
     </dict>
     <key>Cursor Color</key>
     <dict>
