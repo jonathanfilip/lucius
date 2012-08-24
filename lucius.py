@@ -16,14 +16,16 @@ import vim
 
 ROOT_DIR = os.path.join(os.environ.get("HOME"), "lucius")
 SCHEMES = [
-        "LuciusWhite", 
-        "LuciusWhiteBright", 
+        "LuciusWhite",
+        "LuciusWhiteLowContrast",
         "LuciusLight",
-        "LuciusLightBright", 
-        "LuciusDark", 
-        "LuciusDarkDim", 
+        "LuciusLightLowContrast",
+        "LuciusDark",
+        "LuciusDarkHighContrast",
+        "LuciusDarkLowContrast",
         "LuciusBlack",
-        "LuciusBlackDim"
+        "LuciusBlackHighContrast",
+        "LuciusBlackLowContrast",
         ]
 
 
