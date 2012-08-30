@@ -1,0 +1,20 @@
+*background:  %(bg)s
+*foreground:  %(fg)s
+*cursorColor: %(cursor)s
+*color0:      %(ansi0)s
+*color8:      %(ansi8)s
+*color1:      %(ansi1)s
+*color9:      %(ansi9)s
+*color2:      %(ansi2)s
+*color10:     %(ansi10)s
+*color3:      %(ansi3)s
+*color11:     %(ansi11)s
+*color4:      %(ansi4)s
+*color12:     %(ansi12)s
+*color5:      %(ansi5)s
+*color13:     %(ansi13)s
+*color6:      %(ansi6)s
+*color14:     %(ansi14)s
+*color7:      %(ansi7)s
+*color15:     %(ansi15)s
+

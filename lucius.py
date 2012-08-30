@@ -38,8 +38,11 @@ class Color(object):
         self.g = int(self.hex_string[2:4], 16)
         self.b = int(self.hex_string[4:6], 16)
 
+    def get_hex0_string(self):
+        return "0x%s" % self.hex_string
+
     def get_hex_string(self):
-        return "0x%s" % hex_string
+        return "#%s" % self.hex_string
 
     def get_rgb_string(self):
         return "%d,%d,%d" % (self.r, self.g, self.b)
@@ -131,6 +134,9 @@ def get_ansi_colors(mode=None):
         if mode == "rgb":
             for k in d:
                 d[k] = d[k].get_rgb_string()
+        elif mode == "hex":
+            for k in d:
+                d[k] = d[k].get_hex_string()
     return d
 
 
@@ -189,11 +195,37 @@ def write_iterm2(name):
         fd.write(template)
 
 
+def write_xresources(name):
+    template_path = os.path.join(ROOT_DIR, "templates", "xresources.txt")
+    path = os.path.join(ROOT_DIR, "xresources", name)
+    colors = get_ansi_colors(mode="hex")
+    template = ""
+    with open(template_path, "r") as fd:
+        template = fd.read()
+    template = template % colors
+    with open(path, "w") as fd:
+        fd.write(template)
+
+
+def write_mintty(name):
+    template_path = os.path.join(ROOT_DIR, "templates", "mintty.txt")
+    path = os.path.join(ROOT_DIR, "mintty", name)
+    colors = get_ansi_colors(mode="rgb")
+    template = ""
+    with open(template_path, "r") as fd:
+        template = fd.read()
+    template = template % colors
+    with open(path, "w") as fd:
+        fd.write(template)
+
+
 def main():
     for scheme in SCHEMES:
         vim.command(scheme)
         write_putty(scheme)
         write_iterm2(scheme)
+        write_xresources(scheme)
+        write_mintty(scheme)
 
 
 if __name__ == "__main__":
