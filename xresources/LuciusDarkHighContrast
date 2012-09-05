@@ -1,8 +1,8 @@
 *background:  #303030
 *foreground:  #eeeeee
 *cursorColor: #afd7ff
-*color0:      #eeeeee
-*color8:      #eeeeee
+*color0:      #303030
+*color8:      #303030
 *color1:      #ff8787
 *color9:      #ff8787
 *color2:      #d7ffaf
@@ -15,6 +15,6 @@
 *color13:     #ffd7ff
 *color6:      #afffd7
 *color14:     #afffd7
-*color7:      #303030
-*color15:     #303030
+*color7:      #eeeeee
+*color15:     #eeeeee
 

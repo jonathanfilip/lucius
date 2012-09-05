@@ -1,20 +1,20 @@
 ForegroundColour=188,188,188
 BackgroundColour=48,48,48
 CursorColour=95,135,175
-Black=188,188,188
+Black=48,48,48
 Red=215,95,95
 Green=135,175,95
 Yellow=175,175,135
 Blue=95,175,215
 Magenta=175,135,175
 Cyan=95,175,135
-White=48,48,48
-BoldBlack=188,188,188
+White=188,188,188
+BoldBlack=48,48,48
 BoldRed=215,95,95
 BoldGreen=135,175,95
 BoldYellow=175,175,135
 BoldBlue=95,175,215
 BoldMagenta=175,135,175
 BoldCyan=95,175,135
-BoldWhite=48,48,48
+BoldWhite=188,188,188
 
