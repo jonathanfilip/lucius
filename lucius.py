@@ -81,6 +81,7 @@ def is_light_background():
 def get_ansi_colors(mode=None):
     d = {}
     if is_light_background():
+        print "light"
         d["ansi0"] = get_fg("Normal")
         d["black"] = get_fg("Normal")
         d["ansi8"] = get_fg("Normal")
@@ -90,6 +91,7 @@ def get_ansi_colors(mode=None):
         d["ansi15"] = get_bg("Normal")
         d["white_bold"] = get_bg("Normal")
     else:
+        print "dark"
         d["ansi0"] = get_bg("Normal")
         d["black"] = get_bg("Normal")
         d["ansi8"] = get_bg("Normal")
@@ -221,6 +223,7 @@ def write_mintty(name):
 
 def main():
     for scheme in SCHEMES:
+        print "Scheme: %s" % scheme
         vim.command(scheme)
         write_putty(scheme)
         write_iterm2(scheme)
