@@ -1,0 +1,6 @@
+[Scheme]
+Name=%(name)s
+ColorForeground=%(fg)s
+ColorBackground=%(bg)s
+ColorCursor=%(cursor)s
+ColorPalette=%(ansi0)s;%(ansi1)s;%(ansi2)s;%(ansi3)s;%(ansi4)s;%(ansi5)s;%(ansi6)s;%(ansi7)s;%(ansi8)s;%(ansi9)s;%(ansi10)s;%(ansi11)s;%(ansi12)s;%(ansi13)s;%(ansi14)s;%(ansi15)s;
