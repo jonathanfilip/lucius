@@ -17,8 +17,10 @@ import vim
 ROOT_DIR = os.path.join(os.environ.get("HOME"), "lucius")
 SCHEMES = [
         "LuciusWhite",
+        "LuciusWhiteHighContrast",
         "LuciusWhiteLowContrast",
         "LuciusLight",
+        "LuciusLightHighContrast",
         "LuciusLightLowContrast",
         "LuciusDark",
         "LuciusDarkHighContrast",
@@ -218,6 +220,17 @@ def write_mintty(name):
     with open(path, "w") as fd:
         fd.write(template)
 
+def write_xfce4(name):
+    template_path = os.path.join(ROOT_DIR, "templates", "xfce4-terminal.txt")
+    path = os.path.join(ROOT_DIR, "xfce4-terminal", name + ".theme")
+    colors = get_ansi_colors(mode="hex")
+    colors["name"] = name
+    template = ""
+    with open(template_path, "r") as fd:
+        template = fd.read()
+    template = template % colors
+    with open(path, "w") as fd:
+        fd.write(template)
 
 def main():
     for scheme in SCHEMES:
@@ -226,6 +239,7 @@ def main():
         write_iterm2(scheme)
         write_xresources(scheme)
         write_mintty(scheme)
+        write_xfce4(scheme)
 
 
 if __name__ == "__main__":
