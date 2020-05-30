@@ -179,12 +179,12 @@ def write_iterm2(name):
         entries.append(template_item % d)
     other_colors = {}
     other_colors["Background Color"] = get_bg("Normal")
-    other_colors["Bold Color"] = get_fg("Normal")
-    other_colors["Cursor Color"] = get_bg("Cursor")
-    other_colors["Cursor Text Color"] = get_bg("Normal")
     other_colors["Foreground Color"] = get_fg("Normal")
     other_colors["Selected Text Color"] = get_fg("Normal")
+    other_colors["Bold Color"] = get_fg("Normal")
     other_colors["Selection Color"] = get_bg("Visual")
+    other_colors["Cursor Text Color"] = get_bg("Normal")
+    other_colors["Cursor Color"] = get_bg("Cursor")
     for c in other_colors:
         d = dict(
                 name=c,
