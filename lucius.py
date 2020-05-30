@@ -167,7 +167,7 @@ def write_iterm2(name):
     with open(template_item_path, "r") as fd:
         template_item = fd.read()
     entries = []
-    for i in xrange(16):
+    for i in range(16):
         item_name = "Ansi %d Color" % i
         d = dict(
                 name=item_name,
