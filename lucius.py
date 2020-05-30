@@ -233,6 +233,18 @@ def write_xfce4(name):
     with open(path, "w") as fd:
         fd.write(template)
 
+def write_alacritty(name):
+    template_path = os.path.join(ROOT_DIR, "templates", "alacritty.txt")
+    colors = get_ansi_colors(mode="hex")
+    colors["name"] = name
+    path = os.path.join(ROOT_DIR, "alacritty", name + ".yml")
+    template = ""
+    with open(template_path, "r") as fd:
+        template = fd.read()
+    template = template % colors
+    with open(path, "w") as fd:
+        fd.write(template)
+
 def main():
     for scheme in SCHEMES:
         vim.command(scheme)
@@ -241,6 +253,7 @@ def main():
         write_xresources(scheme)
         write_mintty(scheme)
         write_xfce4(scheme)
+        write_alacritty(scheme)
 
 
 if __name__ == "__main__":

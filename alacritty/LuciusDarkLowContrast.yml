@@ -1,0 +1,33 @@
+# Colors (LuciusDarkLowContrast)
+colors:
+  # Default colors
+  primary:
+    background: '#303030'
+    foreground: '#bcbcbc'
+
+  # Cursor colors
+  cursor:
+    text: '#303030'
+    cursor: '#5f87af'
+
+  # Normal colors
+  normal:
+    black:   '#303030'
+    red:     '#d75f5f'
+    green:   '#87af5f'
+    yellow:  '#afaf87'
+    blue:    '#5fafd7'
+    magenta: '#af87af'
+    cyan:    '#5faf87'
+    white:   '#bcbcbc'
+
+  # Bright colors
+  bright:
+    black:   '#303030'
+    red:     '#d75f5f'
+    green:   '#87af5f'
+    yellow:  '#afaf87'
+    blue:    '#5fafd7'
+    magenta: '#af87af'
+    cyan:    '#5faf87'
+    white:   '#bcbcbc'
