@@ -8,13 +8,14 @@ the vim color scheme, "Lucius". This script must be run from within Vim!
 """
 
 
+import inspect
 import os
 import sys
 
 import vim
 
 
-ROOT_DIR = os.path.join(os.environ.get("HOME"), "lucius")
+ROOT_DIR = os.path.dirname(inspect.getfile(inspect.currentframe()))
 SCHEMES = [
         "LuciusWhite",
         "LuciusWhiteHighContrast",
