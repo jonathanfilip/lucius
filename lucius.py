@@ -8,13 +8,14 @@ the vim color scheme, "Lucius". This script must be run from within Vim!
 """
 
 
+import inspect
 import os
 import sys
 
 import vim
 
 
-ROOT_DIR = os.path.join(os.environ.get("HOME"), "lucius")
+ROOT_DIR = os.path.dirname(inspect.getfile(inspect.currentframe()))
 SCHEMES = [
         "LuciusWhite",
         "LuciusWhiteHighContrast",
@@ -167,7 +168,7 @@ def write_iterm2(name):
     with open(template_item_path, "r") as fd:
         template_item = fd.read()
     entries = []
-    for i in xrange(16):
+    for i in range(16):
         item_name = "Ansi %d Color" % i
         d = dict(
                 name=item_name,
@@ -178,12 +179,12 @@ def write_iterm2(name):
         entries.append(template_item % d)
     other_colors = {}
     other_colors["Background Color"] = get_bg("Normal")
-    other_colors["Bold Color"] = get_fg("Normal")
-    other_colors["Cursor Color"] = get_bg("Cursor")
-    other_colors["Cursor Text Color"] = get_bg("Normal")
     other_colors["Foreground Color"] = get_fg("Normal")
     other_colors["Selected Text Color"] = get_fg("Normal")
+    other_colors["Bold Color"] = get_fg("Normal")
     other_colors["Selection Color"] = get_bg("Visual")
+    other_colors["Cursor Text Color"] = get_bg("Normal")
+    other_colors["Cursor Color"] = get_bg("Cursor")
     for c in other_colors:
         d = dict(
                 name=c,
@@ -232,6 +233,18 @@ def write_xfce4(name):
     with open(path, "w") as fd:
         fd.write(template)
 
+def write_alacritty(name):
+    template_path = os.path.join(ROOT_DIR, "templates", "alacritty.txt")
+    colors = get_ansi_colors(mode="hex")
+    colors["name"] = name
+    path = os.path.join(ROOT_DIR, "alacritty", name + ".yml")
+    template = ""
+    with open(template_path, "r") as fd:
+        template = fd.read()
+    template = template % colors
+    with open(path, "w") as fd:
+        fd.write(template)
+
 def main():
     for scheme in SCHEMES:
         vim.command(scheme)
@@ -240,6 +253,7 @@ def main():
         write_xresources(scheme)
         write_mintty(scheme)
         write_xfce4(scheme)
+        write_alacritty(scheme)
 
 
 if __name__ == "__main__":

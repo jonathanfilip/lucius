@@ -1,0 +1,33 @@
+# Colors (LuciusLight)
+colors:
+  # Default colors
+  primary:
+    background: '#eeeeee'
+    foreground: '#444444'
+
+  # Cursor colors
+  cursor:
+    text: '#eeeeee'
+    cursor: '#5f87af'
+
+  # Normal colors
+  normal:
+    black:   '#444444'
+    red:     '#af0000'
+    green:   '#008700'
+    yellow:  '#af5f00'
+    blue:    '#005faf'
+    magenta: '#870087'
+    cyan:    '#008787'
+    white:   '#eeeeee'
+
+  # Bright colors
+  bright:
+    black:   '#444444'
+    red:     '#af0000'
+    green:   '#008700'
+    yellow:  '#af5f00'
+    blue:    '#005faf'
+    magenta: '#870087'
+    cyan:    '#008787'
+    white:   '#eeeeee'

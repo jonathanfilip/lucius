@@ -1,0 +1,33 @@
+# Colors (%(name)s)
+colors:
+  # Default colors
+  primary:
+    background: '%(bg)s'
+    foreground: '%(fg)s'
+
+  # Cursor colors
+  cursor:
+    text: '%(cursor_text)s'
+    cursor: '%(cursor)s'
+
+  # Normal colors
+  normal:
+    black:   '%(black)s'
+    red:     '%(red)s'
+    green:   '%(green)s'
+    yellow:  '%(yellow)s'
+    blue:    '%(blue)s'
+    magenta: '%(magenta)s'
+    cyan:    '%(cyan)s'
+    white:   '%(white)s'
+
+  # Bright colors
+  bright:
+    black:   '%(black_bold)s'
+    red:     '%(red_bold)s'
+    green:   '%(green_bold)s'
+    yellow:  '%(yellow_bold)s'
+    blue:    '%(blue_bold)s'
+    magenta: '%(magenta_bold)s'
+    cyan:    '%(cyan_bold)s'
+    white:   '%(white_bold)s'
