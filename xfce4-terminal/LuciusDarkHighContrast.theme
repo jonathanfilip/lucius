@@ -3,4 +3,4 @@ Name=LuciusDarkHighContrast
 ColorForeground=#eeeeee
 ColorBackground=#303030
 ColorCursor=#afd7ff
-ColorPalette=#303030;#ff8787;#d7ffaf;#ffffd7;#afffff;#ffd7ff;#afffd7;#eeeeee;#303030;#ff8787;#d7ffaf;#ffffd7;#afffff;#ffd7ff;#afffd7;#eeeeee;
+ColorPalette=#303030;#ff8787;#d7ffaf;#ffffd7;#afffff;#ffd7ff;#afffd7;#626262;#444444;#ff8787;#d7ffaf;#ffffd7;#afffff;#ffd7ff;#afffd7;#eeeeee;

@@ -5,6 +5,10 @@ lucius.py
 
 This script is used to generate color files for various applications that match
 the vim color scheme, "Lucius". This script must be run from within Vim!
+$ vim
+:colorscheme lucius
+:py3file lucius.py
+
 """
 
 
@@ -86,18 +90,18 @@ def get_ansi_colors(mode=None):
     if is_light_background():
         d["ansi0"] = get_fg("Normal")
         d["black"] = get_fg("Normal")
-        d["ansi8"] = get_fg("Normal")
+        d["ansi8"] = get_fg("LineNr")
         d["black_bold"] = get_fg("Normal")
-        d["ansi7"] = get_bg("Normal")
+        d["ansi7"] = get_bg("LineNr")
         d["white"] = get_bg("Normal")
         d["ansi15"] = get_bg("Normal")
         d["white_bold"] = get_bg("Normal")
     else:
         d["ansi0"] = get_bg("Normal")
         d["black"] = get_bg("Normal")
-        d["ansi8"] = get_bg("Normal")
+        d["ansi8"] = get_bg("LineNr")
         d["black_bold"] = get_bg("Normal")
-        d["ansi7"] = get_fg("Normal")
+        d["ansi7"] = get_fg("LineNr")
         d["white"] = get_fg("Normal")
         d["ansi15"] = get_fg("Normal")
         d["white_bold"] = get_fg("Normal")
