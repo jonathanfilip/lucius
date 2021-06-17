@@ -136,6 +136,8 @@ def get_ansi_colors(mode=None):
     d["bg_bold"] = get_bg("Normal")
     d["cursor_text"] = get_bg("Normal")
     d["cursor"] = get_bg("Cursor")
+    d["selection_text"] = get_fg("Normal")
+    d["selection"] = get_bg("Visual")
 
     if mode is not None:
         if mode == "rgb":

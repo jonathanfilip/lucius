@@ -10,6 +10,11 @@ colors:
     text: '%(cursor_text)s'
     cursor: '%(cursor)s'
 
+  # Selection colors
+  selection:
+    text: '%(selection_text)s'
+    background: '%(selection)s'
+
   # Normal colors
   normal:
     black:   '%(black)s'
