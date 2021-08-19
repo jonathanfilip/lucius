@@ -10,6 +10,11 @@ colors:
     text: '#121212'
     cursor: '#afd7ff'
 
+  # Selection colors
+  selection:
+    text: '#eeeeee'
+    background: '#005f87'
+
   # Normal colors
   normal:
     black:   '#121212'
