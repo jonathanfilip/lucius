@@ -251,6 +251,17 @@ def write_alacritty(name):
     with open(path, "w") as fd:
         fd.write(template)
 
+def write_kitty(name):
+    template_path = os.path.join(ROOT_DIR, "templates", "kitty.txt")
+    path = os.path.join(ROOT_DIR, "kitty", name + ".conf")
+    colors = get_ansi_colors(mode="hex")
+    template = ""
+    with open(template_path, "r") as fd:
+        template = fd.read()
+    template = template % colors
+    with open(path, "w") as fd:
+        fd.write(template)
+
 def main():
     for scheme in SCHEMES:
         vim.command(scheme)
@@ -260,6 +271,7 @@ def main():
         write_mintty(scheme)
         write_xfce4(scheme)
         write_alacritty(scheme)
+        write_kitty(scheme)
 
 
 if __name__ == "__main__":
